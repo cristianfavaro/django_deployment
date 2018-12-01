@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+<!-- sempre lembrar de logar a tag com essa funcao, que vem sempre depois do extends-->
+  {% block body_block %}
+    <h1>Welcome to index</h1>
+
+    <h1>{{ text|cut:'world'}}</h1>
+    <h1>{{ number|add:"299" }}</h1>
+  {% endblock %}
